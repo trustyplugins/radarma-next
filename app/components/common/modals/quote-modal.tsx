@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-//import { Modal } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import Link from 'next/link';
 
 import { all_routes } from '../../core/data/routes/all_routes';
