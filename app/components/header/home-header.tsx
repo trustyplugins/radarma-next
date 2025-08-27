@@ -513,7 +513,7 @@ const HomeHeader: React.FC<Props> = ({ type }) => {
               <L href={'/'} className="navbar-brand logo">
                 <ImageWithBasePath src="assets/img/logo.svg" className="img-fluid" alt="Logo" />
               </L>
-              {/* ...rest unchanged, just use <L href="..."> everywhere */}
+              
             </div>
             <div className="main-menu-wrapper">
               <div className="menu-header">
