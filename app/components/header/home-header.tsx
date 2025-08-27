@@ -75,14 +75,14 @@ const HomeHeader: React.FC<Props> = ({ type }) => {
     switch (pathType) {
       case 1:
         return (
-        <ul className="nav header-navbar-rht">
+          <ul className="nav header-navbar-rht">
             <li className="nav-item pe-1">
               <Link className="nav-link btn btn-light" href="#" data-bs-toggle="modal" data-bs-target="#login-modal"><i className="ti ti-lock me-2"></i>Sign In</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link btn btn-linear-primary" href="#" data-bs-toggle="modal" data-bs-target="#register-modal"><i className="ti ti-user-filled me-2"></i>Join Us</Link>
             </li>
-				</ul>
+          </ul>
         );
         break;
       case 2:
@@ -101,7 +101,7 @@ const HomeHeader: React.FC<Props> = ({ type }) => {
                 className="nav-link header-login"
                 href={routes.login}
               >
-              <i className="fa-regular fa-circle-user me-2"></i>Login
+                <i className="fa-regular fa-circle-user me-2"></i>Login
               </Link>
             </li>
           </ul>
@@ -112,7 +112,7 @@ const HomeHeader: React.FC<Props> = ({ type }) => {
           <ul className="nav header-navbar-rht">
             <li className="nav-item">
               <Link className="nav-link header-login" href={routes.login}>
-              <i className="feather icon-user" /> Register / Login
+                <i className="feather icon-user" /> Register / Login
               </Link>
             </li>
           </ul>
@@ -123,14 +123,14 @@ const HomeHeader: React.FC<Props> = ({ type }) => {
           <ul className="nav header-navbar-rht">
             <li className="nav-item">
               <Link className="nav-link header-login" href={routes.userSignup}>
-               <i className="feather icon-calendar me-2"/>
+                <i className="feather icon-calendar me-2" />
                 APPOINTMENT
               </Link>
             </li>
             <li className="nav-item">
               <div className="cta-btn">
                 <Link className="btn" href={routes.userSignup}>
-                 <i className="feather icon-users me-2"/>
+                  <i className="feather icon-users me-2" />
                   REGISTER /
                 </Link>
                 <Link className="btn ms-1" href={routes.login}>
@@ -169,7 +169,7 @@ const HomeHeader: React.FC<Props> = ({ type }) => {
             </li>
             <li className="nav-item">
               <Link className="nav-link header-login" href={routes.login}>
-              <i className="feather icon-user me-2" />
+                <i className="feather icon-user me-2" />
                 Login
               </Link>
             </li>
@@ -249,220 +249,220 @@ const HomeHeader: React.FC<Props> = ({ type }) => {
       case 11:
         return (
           <div className="header-btn d-flex align-items-center">
-                <div className="provider-head-links">
-                  <Link
-                    href="#"
-                    className="d-flex align-items-center justify-content-center me-2 notify-link"
-                    data-bs-toggle="dropdown"
-                  >
-                    <i className="feather icon-bell" />
-                  </Link>
-                  <div className="dropdown-menu dropdown-menu-end notification-dropdown p-4">
-                    <div className="d-flex dropdown-body align-items-center justify-content-between border-bottom p-0 pb-3 mb-3">
-                      <h6 className="notification-title">
-                        Notifications <span className="fs-18 text-gray"> (2)</span>
-                      </h6>
-                      <div className="d-flex align-items-center">
-                        <Link href="#" className="text-primary fs-15 me-3 lh-1">
-                          Mark all as read
-                        </Link>
-                        <div className="dropdown">
+            <div className="provider-head-links">
+              <Link
+                href="#"
+                className="d-flex align-items-center justify-content-center me-2 notify-link"
+                data-bs-toggle="dropdown"
+              >
+                <i className="feather icon-bell" />
+              </Link>
+              <div className="dropdown-menu dropdown-menu-end notification-dropdown p-4">
+                <div className="d-flex dropdown-body align-items-center justify-content-between border-bottom p-0 pb-3 mb-3">
+                  <h6 className="notification-title">
+                    Notifications <span className="fs-18 text-gray"> (2)</span>
+                  </h6>
+                  <div className="d-flex align-items-center">
+                    <Link href="#" className="text-primary fs-15 me-3 lh-1">
+                      Mark all as read
+                    </Link>
+                    <div className="dropdown">
+                      <Link
+                        href="#"
+                        className="bg-white dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside"
+                      >
+                        <i className="ti ti-calendar-due me-1" />
+                        Today
+                      </Link>
+                      <ul className="dropdown-menu mt-2 p-3">
+                        <li>
                           <Link
                             href="#"
-                            className="bg-white dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            data-bs-auto-close="outside"
+                            className="dropdown-item rounded-1"
                           >
-                            <i className="ti ti-calendar-due me-1" />
-                            Today
+                            This Week
                           </Link>
-                          <ul className="dropdown-menu mt-2 p-3">
-                            <li>
-                              <Link
-                                href="#"
-                                className="dropdown-item rounded-1"
-                              >
-                                This Week
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                href="#"
-                                className="dropdown-item rounded-1"
-                              >
-                                Last Week
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                href="#"
-                                className="dropdown-item rounded-1"
-                              >
-                                Last Week
-                              </Link>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                        </li>
+                        <li>
+                          <Link
+                            href="#"
+                            className="dropdown-item rounded-1"
+                          >
+                            Last Week
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="#"
+                            className="dropdown-item rounded-1"
+                          >
+                            Last Week
+                          </Link>
+                        </li>
+                      </ul>
                     </div>
-                    <div className="noti-content">
-                      <div className="d-flex flex-column">
-                        <div className="border-bottom mb-3 pb-3">
-                          <Link href={routes.commonNotification}>
-                            <div className="d-flex">
-                              <span className="avatar avatar-lg me-2 flex-shrink-0">
-                                <ImageWithBasePath
-                                  src="assets/img/profiles/avatar-52.jpg"
-                                  alt="Profile"
-                                  className="rounded-circle"
-                                />
+                  </div>
+                </div>
+                <div className="noti-content">
+                  <div className="d-flex flex-column">
+                    <div className="border-bottom mb-3 pb-3">
+                      <Link href={routes.commonNotification}>
+                        <div className="d-flex">
+                          <span className="avatar avatar-lg me-2 flex-shrink-0">
+                            <ImageWithBasePath
+                              src="assets/img/profiles/avatar-52.jpg"
+                              alt="Profile"
+                              className="rounded-circle"
+                            />
+                          </span>
+                          <div className="flex-grow-1">
+                            <div className="d-flex align-items-center">
+                              <p className="mb-1 w-100">
+                                <span className="text-dark fw-semibold">
+                                  Stephan Peralt
+                                </span>{" "}
+                                rescheduled the service to 14/01/2024.{" "}
+                              </p>
+                              <span className="d-flex justify-content-end ">
+                                {" "}
+                                <i className="ti ti-point-filled text-primary" />
                               </span>
-                              <div className="flex-grow-1">
-                                <div className="d-flex align-items-center">
-                                  <p className="mb-1 w-100">
-                                    <span className="text-dark fw-semibold">
-                                      Stephan Peralt
-                                    </span>{" "}
-                                    rescheduled the service to 14/01/2024.{" "}
-                                  </p>
-                                  <span className="d-flex justify-content-end ">
-                                    {" "}
-                                    <i className="ti ti-point-filled text-primary" />
-                                  </span>
-                                </div>
-                                <span>Just Now</span>
-                              </div>
                             </div>
-                          </Link>
+                            <span>Just Now</span>
+                          </div>
                         </div>
-                        <div className="border-bottom mb-3 pb-3">
-                          <Link href={routes.commonNotification} className="pb-0">
-                            <div className="d-flex">
-                              <span className="avatar avatar-lg me-2 flex-shrink-0">
-                                <ImageWithBasePath
-                                  src="assets/img/profiles/avatar-36.jpg"
-                                  alt="Profile"
-                                  className="rounded-circle"
-                                />
-                              </span>
-                              <div className="flex-grow-1">
-                                <div className="d-flex align-items-center">
-                                  <p className="mb-1 w-100">
-                                    <span className="text-dark fw-semibold">
-                                      Harvey Smith
-                                    </span>{" "}
-                                    has requested your service.
-                                  </p>
-                                  <span className="d-flex justify-content-end ">
-                                    {" "}
-                                    <i className="ti ti-point-filled text-primary" />
-                                  </span>
-                                </div>
-                                <span>5 mins ago</span>
-                                <div className="d-flex justify-content-start align-items-center mt-2">
-                                  <span className="btn btn-light btn-sm me-2">Deny</span>
-                                  <span className="btn btn-dark btn-sm">Accept</span>
-                                </div>
-                              </div>
-                            </div>
-                          </Link>
-                        </div>
-                        <div className="border-bottom mb-3 pb-3">
-                          <Link href={routes.commonNotification}>
-                            <div className="d-flex">
-                              <span className="avatar avatar-lg me-2 flex-shrink-0">
-                                <ImageWithBasePath
-                                  src="assets/img/profiles/avatar-02.jpg"
-                                  alt="Profile"
-                                  className="rounded-circle"
-                                />
-                              </span>
-                              <div className="flex-grow-1">
-                                <p className="mb-1">
-                                  <span className="text-dark fw-semibold">
-                                    {" "}
-                                    Anthony Lewis
-                                  </span>{" "}
-                                  has left feedback for your recent service{" "}
-                                </p>
-                                <span>10 mins ago</span>
-                              </div>
-                            </div>
-                          </Link>
-                        </div>
-                        <div className="border-0 mb-3 pb-0">
-                          <Link href={routes.commonNotification}>
-                            <div className="d-flex">
-                              <span className="avatar avatar-lg me-2 flex-shrink-0">
-                                <ImageWithBasePath
-                                  src="assets/img/profiles/avatar-22.jpg"
-                                  alt="Profile"
-                                  className="rounded-circle"
-                                />
-                              </span>
-                              <div className="flex-grow-1">
-                                <p className="mb-1">
-                                  <span className="text-dark fw-semibold">
-                                    Brian Villaloboshas{" "}
-                                  </span>{" "}
-                                  cancelled the service scheduled for 14/01/2024.
-                                </p>
-                                <span>15 mins ago</span>
-                              </div>
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="d-flex p-0 notification-footer-btn">
-                      <Link href="#" className="btn btn-light rounded  me-2">
-                        Cancel
                       </Link>
-                      <Link href="#" className="btn btn-dark rounded ">
-                        View All
+                    </div>
+                    <div className="border-bottom mb-3 pb-3">
+                      <Link href={routes.commonNotification} className="pb-0">
+                        <div className="d-flex">
+                          <span className="avatar avatar-lg me-2 flex-shrink-0">
+                            <ImageWithBasePath
+                              src="assets/img/profiles/avatar-36.jpg"
+                              alt="Profile"
+                              className="rounded-circle"
+                            />
+                          </span>
+                          <div className="flex-grow-1">
+                            <div className="d-flex align-items-center">
+                              <p className="mb-1 w-100">
+                                <span className="text-dark fw-semibold">
+                                  Harvey Smith
+                                </span>{" "}
+                                has requested your service.
+                              </p>
+                              <span className="d-flex justify-content-end ">
+                                {" "}
+                                <i className="ti ti-point-filled text-primary" />
+                              </span>
+                            </div>
+                            <span>5 mins ago</span>
+                            <div className="d-flex justify-content-start align-items-center mt-2">
+                              <span className="btn btn-light btn-sm me-2">Deny</span>
+                              <span className="btn btn-dark btn-sm">Accept</span>
+                            </div>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                    <div className="border-bottom mb-3 pb-3">
+                      <Link href={routes.commonNotification}>
+                        <div className="d-flex">
+                          <span className="avatar avatar-lg me-2 flex-shrink-0">
+                            <ImageWithBasePath
+                              src="assets/img/profiles/avatar-02.jpg"
+                              alt="Profile"
+                              className="rounded-circle"
+                            />
+                          </span>
+                          <div className="flex-grow-1">
+                            <p className="mb-1">
+                              <span className="text-dark fw-semibold">
+                                {" "}
+                                Anthony Lewis
+                              </span>{" "}
+                              has left feedback for your recent service{" "}
+                            </p>
+                            <span>10 mins ago</span>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                    <div className="border-0 mb-3 pb-0">
+                      <Link href={routes.commonNotification}>
+                        <div className="d-flex">
+                          <span className="avatar avatar-lg me-2 flex-shrink-0">
+                            <ImageWithBasePath
+                              src="assets/img/profiles/avatar-22.jpg"
+                              alt="Profile"
+                              className="rounded-circle"
+                            />
+                          </span>
+                          <div className="flex-grow-1">
+                            <p className="mb-1">
+                              <span className="text-dark fw-semibold">
+                                Brian Villaloboshas{" "}
+                              </span>{" "}
+                              cancelled the service scheduled for 14/01/2024.
+                            </p>
+                            <span>15 mins ago</span>
+                          </div>
+                        </div>
                       </Link>
                     </div>
                   </div>
                 </div>
-                <div className="provider-head-links">
-                  <Link
-                    href={routes.customerChat}
-                    className="d-flex align-items-center justify-content-center me-2"
-                  >
-                    <i className="feather icon-mail" />
+                <div className="d-flex p-0 notification-footer-btn">
+                  <Link href="#" className="btn btn-light rounded  me-2">
+                    Cancel
                   </Link>
-                </div>
-                <div className="dropdown">
-                  <Link
-                    href="#"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    className=""
-                  >
-                    <div className="booking-user d-flex align-items-center">
-                      <span className="user-img">
-                        <ImageWithBasePath src="assets/img/profiles/avatar-02.jpg" alt="user" />
-                      </span>
-                    </div>
+                  <Link href="#" className="btn btn-dark rounded ">
+                    View All
                   </Link>
-                  <ul className="dropdown-menu p-2">
-                    <li>
-                      <Link
-                        className="dropdown-item d-flex align-items-center"
-                        href={routes.login}
-                      >
-                        <i className="ti ti-logout me-1" />
-                        Logout
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="header__hamburger d-lg-none my-auto">
-                  <div className="sidebar-menu">
-                    <i className="fa-solid fa-bars" />
-                  </div>
                 </div>
               </div>
+            </div>
+            <div className="provider-head-links">
+              <Link
+                href={routes.customerChat}
+                className="d-flex align-items-center justify-content-center me-2"
+              >
+                <i className="feather icon-mail" />
+              </Link>
+            </div>
+            <div className="dropdown">
+              <Link
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                className=""
+              >
+                <div className="booking-user d-flex align-items-center">
+                  <span className="user-img">
+                    <ImageWithBasePath src="assets/img/profiles/avatar-02.jpg" alt="user" />
+                  </span>
+                </div>
+              </Link>
+              <ul className="dropdown-menu p-2">
+                <li>
+                  <Link
+                    className="dropdown-item d-flex align-items-center"
+                    href={routes.login}
+                  >
+                    <i className="ti ti-logout me-1" />
+                    Logout
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="header__hamburger d-lg-none my-auto">
+              <div className="sidebar-menu">
+                <i className="fa-solid fa-bars" />
+              </div>
+            </div>
+          </div>
         );
         break;
 
@@ -513,7 +513,7 @@ const HomeHeader: React.FC<Props> = ({ type }) => {
               <L href={'/'} className="navbar-brand logo">
                 <ImageWithBasePath src="assets/img/logo.svg" className="img-fluid" alt="Logo" />
               </L>
-              
+
             </div>
             <div className="main-menu-wrapper">
               <div className="menu-header">
@@ -555,7 +555,7 @@ const HomeHeader: React.FC<Props> = ({ type }) => {
                   :
                   <></>
                 }
-
+                <li className="nav-item "><Link href="/">Home</Link></li>
                 {header_data.map((item: any, index: number) => {
                   if (item.separateRoute) return null;
 
