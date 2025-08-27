@@ -9,20 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.0",
+    "@reduxjs/toolkit": "^2.8.2",
+    "@supabase/supabase-js": "^2.55.0",
     "antd": "^5.26.6",
     "bootstrap": "^5.3.7",
     "next": "15.4.2",
     "primereact": "^10.9.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "react-feather": "^2.0.10",
     "react-redux": "^9.2.0",
-    "redux": "^5.0.1"
+    "react-slick": "^0.31.0",
+    "redux": "^5.0.1",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-slick": "^0.23.13",
+    "sass": "^1.32.13",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
