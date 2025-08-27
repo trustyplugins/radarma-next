@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import * as Icon from 'react-feather';
-import ImageWithBasePath from '../../../../core/img/ImageWithBasePath';
+import ImageWithBasePath from '../../core/img/ImageWithBasePath';
 
 const ProviderBookingModal = () => {
   return (

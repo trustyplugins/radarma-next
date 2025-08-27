@@ -1,6 +1,7 @@
 import React from 'react'
-import ImageWithBasePath from '../../../../core/img/ImageWithBasePath'
-import { Link } from 'react-router-dom';
+import ImageWithBasePath from '../../core/img/ImageWithBasePath'
+import Link from 'next/link';
+
 
 const CustomerWalletModal = () => {
   return (

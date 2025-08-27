@@ -2,7 +2,8 @@ import { Calendar } from 'primereact/calendar';
 import { Dropdown } from 'primereact/dropdown';
 import React, { useState } from 'react'
 import * as Icon from 'react-feather';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
+
 
 const ProviderOfferModal = () => {
   const category = [{ name: 'Select Type' }, { name: 'Fixed' }];

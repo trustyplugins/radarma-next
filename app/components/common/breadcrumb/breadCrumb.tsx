@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { all_routes } from '../../../../core/data/routes/all_routes';
-import ImageWithBasePath from '../../../../core/img/ImageWithBasePath';
+import Link from 'next/link';
+
+import { all_routes } from '../../core/data/routes/all_routes';
+import ImageWithBasePath from '../../core/img/ImageWithBasePath';
 interface breadCrumbProps {
   title: string;
   item1?: string;
