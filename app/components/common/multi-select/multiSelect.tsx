@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MultiSelect, MultiSelectChangeEvent } from 'primereact/multiselect';
-import ImageWithBasePath from "../../../../core/img/ImageWithBasePath";
+import ImageWithBasePath from "../../core/img/ImageWithBasePath";
 
 interface Country {
     name: string;
