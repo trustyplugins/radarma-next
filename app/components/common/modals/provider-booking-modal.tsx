@@ -36,19 +36,19 @@ const ProviderBookingModal = () => {
               <div className="form-group form-info">
                 <label className="col-form-label">Rate The Service</label>
                 <div className="rating rating-select mb-0">
-                  <Link to="#">
+                  <Link href="#">
                     <i className="fas fa-star" />
                   </Link>
-                  <Link to="#">
+                  <Link href="#">
                     <i className="fas fa-star" />
                   </Link>
-                  <Link to="#">
+                  <Link href="#">
                     <i className="fas fa-star" />
                   </Link>
-                  <Link to="#">
+                  <Link href="#">
                     <i className="fas fa-star" />
                   </Link>
-                  <Link to="#">
+                  <Link href="#">
                     <i className="fas fa-star" />
                   </Link>
                 </div>

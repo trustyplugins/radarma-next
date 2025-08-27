@@ -29,7 +29,7 @@ const QuoteModal = () => {
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header d-flex align-items-center justify-content-end pb-0 border-0">
-              <Link to="#" data-bs-dismiss="modal" aria-label="Close">
+              <Link href="#" data-bs-dismiss="modal" aria-label="Close">
                 <i className="ti ti-circle-x-filled fs-20" />
               </Link>
             </div>
@@ -118,7 +118,7 @@ const QuoteModal = () => {
                   </ul>
                   <div className="text-end">
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(2)}
                       className="btn btn-linear-primary next_btn"
                     >
@@ -188,14 +188,14 @@ const QuoteModal = () => {
                   </ul>
                   <div className="text-end">
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(1)}
                       className="btn btn-light prev_btn me-3"
                     >
                       Back
                     </Link>
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(3)}
                       className="btn btn-linear-primary next_btn"
                     >
@@ -276,14 +276,14 @@ const QuoteModal = () => {
                   </ul>
                   <div className="text-end">
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(2)}
                       className="btn btn-light prev_btn me-3"
                     >
                       Back
                     </Link>
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(4)}
                       className="btn btn-linear-primary next_btn"
                     >
@@ -364,14 +364,14 @@ const QuoteModal = () => {
                   </ul>
                   <div className="text-end">
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(3)}
                       className="btn btn-light prev_btn me-3"
                     >
                       Back
                     </Link>
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(5)}
                       className="btn btn-linear-primary next_btn"
                     >
@@ -452,14 +452,14 @@ const QuoteModal = () => {
                   </ul>
                   <div className="text-end">
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(4)}
                       className="btn btn-light prev_btn me-3"
                     >
                       Back
                     </Link>
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(6)}
                       className="btn btn-linear-primary next_btn"
                     >
@@ -542,14 +542,14 @@ const QuoteModal = () => {
                   </ul>
                   <div className="text-end">
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(5)}
                       className="btn btn-light prev_btn me-3"
                     >
                       Back
                     </Link>
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(7)}
                       className="btn btn-linear-primary next_btn"
                     >
@@ -630,14 +630,14 @@ const QuoteModal = () => {
                   </ul>
                   <div className="text-end">
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(6)}
                       className="btn btn-light prev_btn me-3"
                     >
                       Back
                     </Link>
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(8)}
                       className="btn btn-linear-primary next_btn"
                     >
@@ -736,14 +736,14 @@ const QuoteModal = () => {
                   </ul>
                   <div className="text-end">
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(7)}
                       className="btn btn-light prev_btn me-3"
                     >
                       Back
                     </Link>
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(9)}
                       className="btn btn-linear-primary next_btn"
                     >
@@ -826,14 +826,14 @@ const QuoteModal = () => {
                   </ul>
                   <div className="text-end">
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(8)}
                       className="btn btn-light prev_btn me-3"
                     >
                       Back
                     </Link>
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(10)}
                       className="btn btn-linear-primary next_btn"
                     >
@@ -905,14 +905,14 @@ const QuoteModal = () => {
                   </ul>
                   <div className="text-end">
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(9)}
                       className="btn btn-light prev_btn me-3"
                     >
                       Back
                     </Link>
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(11)}
                       className="btn btn-linear-primary next_btn"
                     >
@@ -937,14 +937,14 @@ const QuoteModal = () => {
                   </div>
                   <div className="text-end">
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(10)}
                       className="btn btn-light prev_btn me-3"
                     >
                       Back
                     </Link>
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(12)}
                       className="btn btn-linear-primary next_btn"
                     >
@@ -967,14 +967,14 @@ const QuoteModal = () => {
                   </div>
                   <div className="text-end">
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(11)}
                       className="btn btn-light prev_btn me-3"
                     >
                       Back
                     </Link>
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(13)}
                       className="btn btn-linear-primary next_btn"
                     >
@@ -999,14 +999,14 @@ const QuoteModal = () => {
                   </div>
                   <div className="text-end">
                     <Link
-                      to="#"
+                      href="#"
                       onClick={() => setActiveTab(12)}
                       className="btn btn-light prev_btn me-3"
                     >
                       Back
                     </Link>
                     <Link
-                      to="#"
+                      href="#"
                       data-bs-dismiss="modal"
                       onClick={handelOpen}
                       className="btn btn-linear-primary next_btn"
@@ -1038,11 +1038,11 @@ const QuoteModal = () => {
               </p>
             </div>
             <div className="d-flex align-items-center justify-content-center">
-              <Link to="#" onClick={handleClose} className="btn btn-light me-3">
+              <Link href="#" onClick={handleClose} className="btn btn-light me-3">
                 Close
               </Link>
               <Link
-                to={routes.bookingDetails}
+                href={routes.bookingDetails}
                 className="btn btn-linear-primary"
               >
                 Booking Details

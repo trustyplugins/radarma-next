@@ -27,7 +27,7 @@ const SuccessModal = () => {
               <h3>Success</h3>
               <p>Service has been created succeessfully</p>
               <div className="popup-btn">
-                <Link to={routes.providerService} className="btn btn-primary">
+                <Link href={routes.providerService} className="btn btn-primary">
                   Go to Dashboard <i className="fa-solid fa-arrow-right" />
                 </Link>
               </div>

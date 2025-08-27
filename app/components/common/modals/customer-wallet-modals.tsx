@@ -18,7 +18,7 @@ const CustomerWalletModal = () => {
             <div className="modal-header d-flex align-items-center justify-content-between  border-0">
               <h5>Add Wallet</h5>
               <Link
-                to="#"
+                href="#"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               >

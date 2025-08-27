@@ -80,7 +80,7 @@ const ProviderOfferModal = () => {
               </div>
               <div className="modal-submit text-end">
                 <Link
-                  to="#"
+                 href="#"
                   className="btn btn-secondary me-2"
                   data-bs-dismiss="modal"
                 >
@@ -162,7 +162,7 @@ const ProviderOfferModal = () => {
               </div>
               <div className="modal-submit text-end">
                 <Link
-                  to="#"
+                 href="#"
                   className="btn btn-secondary me-2"
                   data-bs-dismiss="modal"
                 >
