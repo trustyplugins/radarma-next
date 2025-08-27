@@ -510,7 +510,7 @@ const HomeHeader: React.FC<Props> = ({ type }) => {
               <L onClick={toogle} id="mobile_btn" href="#">
                 <span className="bar-icon"><span /><span /><span /></span>
               </L>
-              <L href={routes.index} className="navbar-brand logo">
+              <L href={'/'} className="navbar-brand logo">
                 <ImageWithBasePath src="assets/img/logo.svg" className="img-fluid" alt="Logo" />
               </L>
               {/* ...rest unchanged, just use <L href="..."> everywhere */}
