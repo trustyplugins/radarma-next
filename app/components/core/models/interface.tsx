@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-
+import React from "react";
 export interface Header {
   menu(menu: any): unknown;
   map(arg0: (item: Header) => void): unknown;
@@ -376,7 +376,7 @@ export interface CustomerDevicemanage {
 export type SidebarItem = {
   link: string;
   name: string;
-  icon: JSX.Element;
+  icon: React.ReactElement;
 };
 
 export interface CustomerSidebarItem {

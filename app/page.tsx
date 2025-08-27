@@ -162,7 +162,7 @@ export default function HomePage() {
                   className="img-fluid animation-float"
                   width={900}
                   height={700}
-                  priority
+                 // priority
                 />
               </div>
             </div>
