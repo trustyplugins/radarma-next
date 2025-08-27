@@ -632,13 +632,13 @@ const HomeHeader: React.FC<Props> = ({ type }) => {
                   );
                 })}
 
-                {type == 1 ?
+                {/* {type == 1 ?
                   <li className="nav-item">
                     <Link className="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#provider">Become a Provider</Link>
                   </li>
                   :
                   <></>
-                }
+                } */}
                 <li className={`nav-item ${type == 10 ? 'd-none' : ''}`}>
                   <Link target='_blank' href="/admin/dashboard">Admin</Link>
                 </li>
