@@ -226,6 +226,54 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
+            <div className="col d-flex">
+              <div className="category-item text-center flex-fill wow fadeInUp" data-wow-delay="0.2s">
+                <div className="mx-auto mb-3">
+                  <ImageWithBasePath src="assets/img/icons/category-01.svg" className="img-fluid" alt="Construction" width={64} height={64} />
+                </div>
+                <h6 className="fs-14 mb-1">Construction</h6>
+                <p className="fs-14 mb-0">9874 Listings</p>
+                <Link href={routes.categories} className="link-primary text-decoration-underline fs-14">
+                  View All
+                </Link>
+              </div>
+            </div>
+            <div className="col d-flex">
+              <div className="category-item text-center flex-fill wow fadeInUp" data-wow-delay="0.2s">
+                <div className="mx-auto mb-3">
+                  <ImageWithBasePath src="assets/img/icons/category-01.svg" className="img-fluid" alt="Construction" width={64} height={64} />
+                </div>
+                <h6 className="fs-14 mb-1">Construction</h6>
+                <p className="fs-14 mb-0">9874 Listings</p>
+                <Link href={routes.categories} className="link-primary text-decoration-underline fs-14">
+                  View All
+                </Link>
+              </div>
+            </div>
+            <div className="col d-flex">
+              <div className="category-item text-center flex-fill wow fadeInUp" data-wow-delay="0.2s">
+                <div className="mx-auto mb-3">
+                  <ImageWithBasePath src="assets/img/icons/category-01.svg" className="img-fluid" alt="Construction" width={64} height={64} />
+                </div>
+                <h6 className="fs-14 mb-1">Construction</h6>
+                <p className="fs-14 mb-0">9874 Listings</p>
+                <Link href={routes.categories} className="link-primary text-decoration-underline fs-14">
+                  View All
+                </Link>
+              </div>
+            </div>
+            <div className="col d-flex">
+              <div className="category-item text-center flex-fill wow fadeInUp" data-wow-delay="0.2s">
+                <div className="mx-auto mb-3">
+                  <ImageWithBasePath src="assets/img/icons/category-01.svg" className="img-fluid" alt="Construction" width={64} height={64} />
+                </div>
+                <h6 className="fs-14 mb-1">Construction</h6>
+                <p className="fs-14 mb-0">9874 Listings</p>
+                <Link href={routes.categories} className="link-primary text-decoration-underline fs-14">
+                  View All
+                </Link>
+              </div>
+            </div>
 
             {/* ...paste the rest of your category cards with Link href=... and ImageWithBasePath src="/assets/..." */}
           </div>

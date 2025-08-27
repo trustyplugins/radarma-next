@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss"; */
 /* //@import '~@fortawesome/fontawesome-free/css/all.css'; */
 /* @import 'react-time-picker/dist/TimePicker.css'; */
 /* @import 'react-clock/dist/Clock.css'; */
@@ -1631,4 +1631,8 @@ margin-right: 20px;
 .home-eight .testimonals-eight-slider.slick-slider button.slick-arrow.slick-next {
   right: 0px;
   left: auto;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
 }

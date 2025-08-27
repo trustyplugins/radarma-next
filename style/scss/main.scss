@@ -1,6 +1,11 @@
+// @use "bootstrap/scss/functions";
+// @use "bootstrap/scss/variables";
+// @use "bootstrap/scss/mixins";
 /****** Utils ******/
 @import "utils/variables";
 @import "utils/mixins";
+
+
 
 /******* Base *******/
 @import "base/base";
