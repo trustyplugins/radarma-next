@@ -21,7 +21,7 @@ const BreadCrumb: React.FC<breadCrumbProps> = ({ title, item1, item2 }) => {
               <nav aria-label="breadcrumb">
                 <ol className="breadcrumb justify-content-center mb-0">
                   <li className="breadcrumb-item">
-                    <Link to={routes.index}>
+                    <Link href={routes.index}>
                       <i className="ti ti-home-2" />
                     </Link>
                   </li>
