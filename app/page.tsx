@@ -256,7 +256,6 @@ export default function HomePage() {
       <NewFooter />
 
       <AuthModals />
-      {/* <QuoteModal /> */}
       <BecomeProvider />
     </>
   );
