@@ -1,13 +1,19 @@
+// app/components/core/data/redux/store.ts
 import { configureStore } from '@reduxjs/toolkit';
 import rootReducer from './reducer';
 
-const store = configureStore({
+export const store = configureStore({
   reducer: rootReducer,
-  // preloadedState:getPreloadedState()
+  // preloadedState: getPreloadedState(),
 });
+
+// Persist helpers (optional)
 // function onStateChange() {
 //   saveToLocalStorage(store.getState());
 // }
 // store.subscribe(onStateChange);
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
 
 export default store;

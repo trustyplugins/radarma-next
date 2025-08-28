@@ -4,12 +4,14 @@ import HomeHeader from "@/app/components/header/home-header";
 import NewFooter from "@/app/components/footer/newFooter";
 import BreadCrumb from "@/app/components/common/breadcrumb/breadCrumb";
 
+type Params = { city: string; category: string };
+
 export default async function CityCategoryPage({
   params,
 }: {
-  params: { city: string; category: string };
+  params: Promise<Params>;
 }) {
-  const { city, category } = params;
+  const { city, category } = await params;
 
   // Fetch city
   const { data: cityData } = await supabase
@@ -33,8 +35,8 @@ export default async function CityCategoryPage({
   const { data: listings, error } = await supabase
     .from("listings")
     .select("id, title, slug, gallery_urls, price")
-    .contains("city_id", [cityData.id])
-    .contains("main_category_ids", [categoryData.id]);
+    .contains("city_id", [cityData.id])           // keep if city_id is an array column
+    .contains("main_category_ids", [categoryData.id]); // keep if this is an array column
 
   if (error) console.error(error.message);
 
@@ -46,7 +48,6 @@ export default async function CityCategoryPage({
         item1={cityData.category}
         item2={categoryData.category}
       />
-
       <section className="section category-section">
         <div className="container">
           <h2 className="mb-4">
