@@ -4,11 +4,11 @@ import HomeHeader from "@/app/components/header/home-header";
 import NewFooter from "@/app/components/footer/newFooter";
 import BreadCrumb from "@/app/components/common/breadcrumb/breadCrumb";
 
-interface Props {
+export default async function CityCategoryPage({
+  params,
+}: {
   params: { city: string; category: string };
-}
-
-export default async function CityCategoryPage({ params }: Props) {
+}) {
   const { city, category } = params;
 
   // Fetch city
@@ -29,7 +29,7 @@ export default async function CityCategoryPage({ params }: Props) {
 
   if (!categoryData) return <div>Category not found</div>;
 
-  // Fetch listings belonging to this city & category
+  // Fetch listings
   const { data: listings, error } = await supabase
     .from("listings")
     .select("id, title, slug, gallery_urls, price")
@@ -50,7 +50,7 @@ export default async function CityCategoryPage({ params }: Props) {
       <section className="section category-section">
         <div className="container">
           <h2 className="mb-4">
-            {categoryData.category} in {cityData.name}
+            {categoryData.category} in {cityData.category}
           </h2>
 
           <div className="row">
@@ -76,7 +76,7 @@ export default async function CityCategoryPage({ params }: Props) {
                 </div>
               ))
             ) : (
-              <p>No listings found in this category for {cityData.name}.</p>
+              <p>No listings found in this category for {cityData.category}.</p>
             )}
           </div>
         </div>
