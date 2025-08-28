@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import { all_routes } from '../core/data/routes/all_routes';
 import Slider from 'react-slick';
