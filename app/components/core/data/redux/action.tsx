@@ -369,3 +369,4 @@ export const categories = (payload: any) => ({
   type: 'CATEGORIES',
   payload
 });
+export const SET_USER_CITY = "SET_USER_CITY";

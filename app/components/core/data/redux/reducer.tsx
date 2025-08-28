@@ -5,6 +5,11 @@ const rootReducer: any = (state = initialState, action: any) => {
   switch (action.type) {
     case 'HEADER_DATA':
       return { ...state, header_data: action.payload };
+      case 'SET_USER_CITY': 
+      if (typeof window !== "undefined") {
+        localStorage.setItem("user_city", action.payload);
+      }
+      return { ...state, city: action.payload };
     case 'DASHBOARD_DATA':
       return { ...state, dashboard_data: action.payload };
     case 'TOOGLE_SIDEBAR_DATA':

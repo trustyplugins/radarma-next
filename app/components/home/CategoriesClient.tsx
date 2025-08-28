@@ -1,7 +1,9 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "@/app/components/core/data/redux/store";
 type Category = {
   id: number;
   category: string;
@@ -14,6 +16,8 @@ type Category = {
 
 
 export default function CategoriesClient({ categories }: { categories: Category[] }) {
+    const city = useSelector((state: RootState) => state.city);
+    console.log(city);
     return (
         <>
             <div className="row justify-content-center">
@@ -46,7 +50,7 @@ export default function CategoriesClient({ categories }: { categories: Category[
                             <h6 className="fs-14 mb-1">{cat.category}</h6>
                             <p className="fs-14 mb-0">{cat.listings_count} Listings</p>
                             <Link
-                                href={`/categories/${cat.category_slug}`}
+                                href={`/${city}/${cat.category_slug}`} 
                                 className="link-primary text-decoration-underline fs-14"
                             >
                                 View All

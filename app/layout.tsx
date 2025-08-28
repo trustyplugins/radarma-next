@@ -9,7 +9,7 @@ import "@/style/icon/tabler-icons/webfont/tabler-icons.css";
 import "@/style/icon/feather/css/iconfont.css";
 import "@/style/scss/main.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
+import LocationDetector from "../app/components/header/LocationDetector";
 import ReduxProvider from "./ReduxProvider"; // ⬅️ add this
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -23,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ReduxProvider>
+        <LocationDetector />
           {children}
         </ReduxProvider>
       </body>

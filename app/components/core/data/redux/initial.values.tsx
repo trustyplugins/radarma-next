@@ -153,7 +153,8 @@ const initialState = {
   refund_reports: refundReportData,
   admin_dashboard_3: adminDashboard3Data,
   offer_data: offer,
- categoriesData :categoriesData
+ categoriesData :categoriesData,
+ city: "chandigarh",
 };
 
 export default initialState;

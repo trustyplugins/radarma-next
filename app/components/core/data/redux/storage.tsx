@@ -1,5 +1,5 @@
 import { storage } from '../../models/interface';
-
+import { SET_USER_CITY } from "./action";
 export const saveToLocalStorage = (state: storage) => {
   try {
     const serializedState = JSON.stringify(state);
@@ -22,3 +22,13 @@ export const getPreloadedState = () => {
     return undefined;
   }
 };
+
+// app/components/core/data/redux/storage.tsx (or action.tsx if you keep them there)
+
+
+
+export const setUserCity = (city: string) => ({
+  type: SET_USER_CITY,
+  payload: city,
+});
+

@@ -10,8 +10,6 @@ import { set_header_data, set_toggleSidebar_data } from "../core/data/redux/acti
 import * as Icon from "react-feather";
 import { AppState, Header } from "../core/models/interface";
 import { header } from "../core/data/json/header";
-
-// 👉 Link adapter so you can keep using "to" for now
 const L = (props: any) => {
   const { to, href, ...rest } = props;
   return <Link href={to ?? href ?? "#"} {...rest} />;
@@ -491,10 +489,11 @@ const HomeHeader: React.FC<Props> = ({ type }) => {
         break;
     }
   };
-  // ... keep your renderButtons as-is, but it will use <L href="..."> instead of <Link href="...">
-
+  const city = useSelector((state: any) => state.city);
+  console.log(city);
   return (
     <>
+      
       <div className={`top-bar ${type !== 3 || !close ? "d-none" : ""}`}>
         <h6>50% OFF on Christmas</h6>
         <ul><li>2</li><li>15</li><li>33</li><li>32</li></ul>
@@ -556,6 +555,7 @@ const HomeHeader: React.FC<Props> = ({ type }) => {
                   <></>
                 } */}
                 <li className="nav-item "><Link href="/">Home</Link></li>
+                <li className="nav-item "><Link href="/categories">Categories</Link></li>
                 {header_data.map((item: any, index: number) => {
                   if (item.separateRoute) return null;
 

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-
+import { useEffect, useState } from "react";
 type Category = {
     id: number;
     category: string;
@@ -14,6 +14,12 @@ type Category = {
 
 
 export default function AllCategories({ categories }: { categories: Category[] }) {
+    const [city, setCity] = useState("chandigarh");
+
+    useEffect(() => {
+      const savedCity = localStorage.getItem("user_city");
+      if (savedCity) setCity(savedCity);
+    }, []);
     return (
         <>
             <div className="page-wrapper">
@@ -24,7 +30,7 @@ export default function AllCategories({ categories }: { categories: Category[] }
                             {categories.map((cat) => (
                                 <div key={cat.id} className="col-lg-3 col-md-6">
                                     <div className="category card wow fadeInUp" data-wow-delay="0.3s">
-                                        <Link href={`/categories/${cat.category_slug}`}>
+                                        <Link href={`/${city}/${cat.category_slug}`} >
                                         <div className="card-body">
                                             <div className="feature-icon d-flex justify-content-center align-items-center mb-2">
                                                 <span className="rounded-pill d-flex justify-content-center align-items-center p-3">

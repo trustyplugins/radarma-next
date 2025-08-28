@@ -1,7 +1,7 @@
 export const all_routes = {
   // home module path
   homeOne: '/home-two',
-  index: '/home',
+  index: '/',
   homeTwo: '/home-three',
   homeThree: '/home-four',
   homeFour: '/home-five',
