@@ -535,7 +535,7 @@ const HomeHeader: React.FC<Props> = ({ type }) => {
                 </Link>
               </div>
               <ul className="main-nav align-items-lg-center">
-                {type == 1 ?
+                {/* {type == 1 ?
                   <li className="d-none d-lg-block">
                     <div>
                       <div className="dropdown">
@@ -554,7 +554,7 @@ const HomeHeader: React.FC<Props> = ({ type }) => {
                   </li>
                   :
                   <></>
-                }
+                } */}
                 <li className="nav-item "><Link href="/">Home</Link></li>
                 {header_data.map((item: any, index: number) => {
                   if (item.separateRoute) return null;
