@@ -5,9 +5,14 @@ import HomeHeader from "@/app/components/header/home-header";
 import NewFooter from "@/app/components/footer/newFooter";
 import BreadCrumb from "@/app/components/common/breadcrumb/breadCrumb";
 
-type Params = { city: string; slug: string };
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+export const dynamicParams = true;
 
-export default async function CitySlugPage({ params }: { params: Params }) {
+type RouteParams = Readonly<{ city: string; slug: string }>;
+type Props = Readonly<{ params: RouteParams }>;
+
+export default async function CitySlugPage({ params }: Props) {
     const { city, slug } = params;
 
     // 1) find city
