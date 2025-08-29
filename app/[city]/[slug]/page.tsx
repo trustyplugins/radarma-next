@@ -5,16 +5,14 @@ import HomeHeader from "@/app/components/header/home-header";
 import NewFooter from "@/app/components/footer/newFooter";
 import BreadCrumb from "@/app/components/common/breadcrumb/breadCrumb";
 
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
-export const dynamicParams = true;
+type Params = { city: string; slug: string };
 
-type RouteParams = Readonly<{ city: string; slug: string }>;
-type Props = Readonly<{ params: RouteParams }>;
-
-export default async function CitySlugPage({ params }: Props) {
-    const { city, slug } = params;
-
+export default async function CitySlugPage({ params, }
+    :{
+        params: Promise<Params>;
+    }
+) {
+    const { city, slug } = await params;
     // 1) find city
     const { data: cityData } = await supabase
         .from("cities")
